@@ -1,0 +1,21 @@
+fun main() {
+    Figure(4, 3.14, 5, 6).xy()
+}
+
+class Figure(val radius: Int, var pi: Double = 3.14, val x: Int, val y: Int) {
+    fun xy() {
+        println("Радиус = $radius, х = $x, у = $y")
+        val p = 2 * pi * radius
+        println("Периметр данной окружности $p")
+        val s = pi * radius * radius
+        println("Площодь данной окружности $s")
+        val diametr = radius * 2
+        println("Диаметр данной окружности $diametr")
+        if (x > diametr && y > diametr) {
+            println("$x и $y не является точкой внутри окружности")
+        }
+        else {
+            println("$x и $y является точкой внутри окружности")
+        }
+    }
+}
