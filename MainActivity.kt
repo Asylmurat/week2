@@ -1,13 +1,13 @@
-package com.example.hw1
+package com.example.a4
 
 fun main() {
-    var sergazy = Worker("Сергазы", 25, 1000)
-    var elaman = Worker("Еламан", 26, 2000)
-    var sumSal = sergazy.salary + elaman.salary
-    var sumAge = sergazy.age + elaman.age
-    println("сумма зарплат Сергазы и Еламан $sumSal")
-    println("сумма возрастов Сергазы и Еламан $sumAge")
+    Fractions(1.5, 2.5).sum()
 }
-class Worker(val name: String, val age: Int, val salary: Int){
-
+class Fractions(val number1: Double, val number2: Double) {
+    fun sum() {
+        println(number1 + number2)
+        println(number1 - number2)
+        println(number1 * number2)
+        println(number1 / number2)
+    }
 }
